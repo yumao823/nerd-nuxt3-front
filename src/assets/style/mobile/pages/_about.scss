@@ -1,0 +1,27 @@
+.about {
+  margin: 10px auto;
+
+  .card {
+    .title {
+      font-size: 36px;
+      color: rgb(54, 60, 69);
+      text-align: center;
+      margin-top: 0;
+      line-height: 42px;
+    }
+    .content {
+      line-height: 25px;
+      margin-bottom: 48px;
+      color: rgb(54, 60, 69);
+    }
+    .img_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin: 0 0.5rem 1rem;
+      }
+    }
+  }
+}

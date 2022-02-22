@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+
+  front-end:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      cache_from:
+        - node:16.13.2-alpine3.15
+      target: prod
+    container_name: front-end
+    restart: unless-stopped
+    ports:
+      - "3000:3000"

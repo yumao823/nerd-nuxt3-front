@@ -1,0 +1,58 @@
+.contact {
+  color: rgb(54, 60, 69);
+  padding: 15px;
+
+  a {
+    color: #3377A7;
+  }
+
+  .title {
+    font-size: 36px;
+    text-align: left;
+    display: flex;
+    margin-bottom: 50px;
+
+    .socials {
+      display: flex;
+      align-items: center;
+      font-size: 26px;
+      margin: 0 0 0 50px;
+
+      a {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+
+    .card {
+      flex: 1;
+      font-size: 14px;
+      padding: 0 15px;
+
+      .content_title {
+        font-size: 30px;
+        margin: 20px 0 10px;
+      }
+
+      .address {
+        margin-bottom: 20px;
+
+        a {
+          text-decoration: none;
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .privacy {
+    font-size: 12px;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,220 @@
+.news {
+  max-width: 976px;
+
+  .post_title {
+    color: #222;
+    margin-left: 30px;
+  }
+
+  .posts {
+    .left_side {
+  
+      .card {
+        color: #333;
+        margin-bottom: 0;
+
+        &_date {
+          margin: 0;
+          a {
+            font-size: 11px;
+            font-weight: bold;
+            color: #767676;
+            letter-spacing: 0.1818em;
+            line-height: 1.2;
+            margin: 0 0 3px 0;
+          }
+        }
+
+        &_title {
+          font-size: 26px;
+          line-height: 36px;
+          transition: border 0.1s linear;
+          margin-bottom: 10px;
+        }
+
+        &_logo {
+          margin-top: 16px;
+          margin-bottom: 23px;
+
+          &:hover {
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+          }
+
+          a {
+            border-color: transparent !important;
+          }
+        }
+
+        &_continue {
+          border-bottom: 1px solid #222;
+          &:hover {
+            text-decoration: none !important;
+            border-bottom: 3px solid #222;
+            transition: border 0.1s linear;
+          }
+        }
+
+        img {
+          max-height: 335px;
+        }
+      }
+    }
+  
+    .right_side {
+      .card {
+        .lists {
+          border-bottom: 1px solid #ddd;
+          margin-bottom: 42px;
+  
+          .list {
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+            margin: 0;
+            padding: 7px 0;
+          }
+        }
+
+        .sub_title {
+          color: #222;
+          font-weight: 800;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-size: 11px;
+          margin-bottom: 22px;
+        }
+
+        .form-fields {
+          input {
+            border: 1px solid rgb(187, 187, 187);
+            &:focus {
+              border: 1px solid #222;
+            }
+          }
+            
+          span {
+            position: relative;
+            display: block;
+
+            .balloon {
+              display: inline-block;
+              width: -webkit-fill-available;
+              padding: 10px;
+              margin-bottom: 35px;
+              font-weight: 400;
+              text-indent: 100px;
+              transition: all 0.3s ease-in-out;
+    
+              &::-webkit-input-placeholder {
+                color: #fff;
+                text-indent: 0;
+                font-weight: 300;
+              }
+    
+              & + label {
+                height: fit-content;
+                display: inline-block;
+                position: absolute;
+                margin-bottom: 0;
+                line-height: 2;
+                top: 6px;
+                left: 0;
+                bottom: 6px;
+                padding: 5px 15px;
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-shadow: 0 1px 0 rgba(19, 74, 70, 0);
+                transition: all 0.3s ease-in-out;
+                border-radius: 3px;
+                background: rgba(122, 184, 147, 0);
+    
+                &::after {
+                  position: absolute;
+                  content: "";
+                  width: 0;
+                  height: 0;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -3px;
+                  border-left: 3px solid transparent;
+                  border-right: 3px solid transparent;
+                  border-top: 3px solid rgba(122, 184, 147, 0);
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+    
+              &:focus,
+              &:active {
+                text-indent: 0;
+    
+                &::-webkit-input-placeholder {
+                  color: #aaa;
+                }
+    
+                & + label {
+                  color: #fff;
+                  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+                  background: #222;
+                  transform: translateY(-40px);
+    
+                  &::after {
+                    border-top: 4px solid #222;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .signup_btn {
+          width: 100%;
+          max-width: 150px;
+          background-color: #222;
+          font-size: 16px;
+          font-weight: bold;
+          color: white;
+          border: none;
+          border-radius: 3px;
+          outline: none;
+          padding: 14px 28px;
+          transition: 0.2s opacity ease;
+          margin-bottom: 42px;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+
+        .connects {
+          display: flex;
+
+          a {
+            &:hover {
+              opacity: 0.7;
+              transition: opacity 0.2s ease;
+              border: 0;
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      border-bottom: 3px solid transparent;
+      &:hover {
+        border-bottom: 3px solid  #222;
+        transition: border 0.1s linear;
+      }
+    }
+  }
+}

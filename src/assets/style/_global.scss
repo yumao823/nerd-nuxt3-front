@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-0 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.icon-1 {
+  width: 1rem;
+  height: 1rem;
+}

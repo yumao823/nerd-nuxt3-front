@@ -1,0 +1,43 @@
+$devices: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 991px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($devices, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($devices, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($devices, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($devices, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($devices, "xl")) {
+    @content;
+  }
+}
+
+@mixin device($dev: 0) {
+  @media (min-width: $dev) {
+    @content;
+  }
+}

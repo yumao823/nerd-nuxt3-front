@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Nexa;
+  unicode-range: U+000-5FF;
+  src: url("assets/fonts/NexaLight.eot"); /* IE9 Compat Modes */
+  src: url("assets/fonts/NexaLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Nexa;
+  unicode-range: U+000-5FF;
+  src: url("assets/fonts/NexaBold.eot"); /* IE9 Compat Modes */
+  src: url("assets/fonts/NexaBold.woff") format("woff"); /* Modern Browsers */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "devices";
+
+@import "normalize";
+
+@import "global";
+
+@include normalize();
+// components
+
+@include xs {
+  @import "mobile/components/header";
+  @import "mobile/components/search";
+  @import "mobile/pages/about";
+  @import "mobile/pages/contact";
+  @import "mobile/pages/news";
+  @import "mobile/pages/auth/login";
+}
+
+@include lg() {
+  @import "desktop/components/header";
+  @import "desktop/components/search";
+  @import "desktop/pages/about";
+  @import "desktop/pages/news";
+  @import "desktop/pages/contact";
+  @import "desktop/pages/auth/login";
+}
