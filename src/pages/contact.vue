@@ -23,16 +23,16 @@
 
     <div class="content">
       <div class="card">
-        <p class="content_title">LONDON</p>
+        <p class="content_title">UKRAINE</p>
         <div class="address">
-          <div>Milana Karaica</div>
+          <div>Yevhenii Luchko</div>
           <div>
             <img class="icon-1" src="/images/icons/envelope.svg" alt="Email">
-            <a href="mailto:milana@nerd.productions">milana@nerd.productions</a>
+            <a href="mailto:milana@nerd.productions">wildmountainfox@gmail.com</a>
           </div>
           <div>
             <img class="icon-1" src="/images/icons/telephone.svg" alt="Telephone">
-            <a href="tel://+447792464333">+44 (77) 9246 4333</a>
+            <a href="tel://+447792464333">+380 (68) 152 3608</a>
           </div>
         </div>
         <div class="address">

@@ -96,15 +96,8 @@
   </div>
 </template>
 
-<script  lang="ts" >
-  import { useAsyncData } from '#app'
-
-
+<script>
   export default {
-    mounted: {
-      const { data, error, pending } = await useAsyncData('news', () => $fetch('https://nerd.productions/api/v2/news') )
-    },
-
     data: () => ({
       posts: [
         {
